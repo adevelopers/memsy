@@ -1,7 +1,7 @@
 # Memsy
 Приложение по показу мемов.
 
-<img src="https://img-9gag-fun.9cache.com/photo/aQebe5d_460s.jpg" alt="Perfect Timing" width="300" />
+<img src="https://img-9gag-fun.9cache.com/photo/agY9GRw_460s.jpg" alt="Perfect Timing" width="300" />
 
 ### Workflow ###
 Приложение соединяется с API и получает рандомный mem.
