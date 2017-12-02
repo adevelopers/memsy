@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func refreshButtonAction(_ sender: Any) {
+        print("КАртинка обновилась")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-      
     }
 
 }
