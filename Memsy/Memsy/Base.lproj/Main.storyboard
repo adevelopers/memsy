@@ -17,52 +17,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="utc-9Q-E8i" userLabel="Primary image">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Buttons" translatesAutoresizingMaskIntoConstraints="NO" id="cyG-KN-xSz" userLabel="Buttons Image">
-                                <rect key="frame" x="23" y="508" width="278" height="50"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnz-ga-uRe">
+                                <rect key="frame" x="16" y="100" width="288" height="368"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sfJ-pW-DAK">
+                                        <rect key="frame" x="5" y="5" width="278" height="293"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10847693913418244" green="0.35246102913676902" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="KcZ-8s-gWM"/>
+                                    <constraint firstAttribute="bottom" secondItem="sfJ-pW-DAK" secondAttribute="bottom" constant="70" id="924-vj-UA5"/>
+                                    <constraint firstItem="sfJ-pW-DAK" firstAttribute="leading" secondItem="fnz-ga-uRe" secondAttribute="leading" constant="5" id="Xqd-tf-6sX"/>
+                                    <constraint firstAttribute="trailing" secondItem="sfJ-pW-DAK" secondAttribute="trailing" constant="5" id="ckU-ht-ZHz"/>
+                                    <constraint firstItem="sfJ-pW-DAK" firstAttribute="top" secondItem="fnz-ga-uRe" secondAttribute="top" constant="5" id="kVQ-Sa-ptt"/>
                                 </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Swipe Card" translatesAutoresizingMaskIntoConstraints="NO" id="0lV-fK-LZb">
-                                <rect key="frame" x="10" y="68" width="300" height="428"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Bitmap" translatesAutoresizingMaskIntoConstraints="NO" id="NbK-Bh-YTb">
-                                <rect key="frame" x="21" y="117" width="277" height="281"/>
-                            </imageView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="utc-9Q-E8i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4dh-bF-Kwh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cyG-KN-xSz" secondAttribute="bottom" constant="10" id="Co3-kH-wLB"/>
-                            <constraint firstItem="utc-9Q-E8i" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Cyw-BN-cVS"/>
-                            <constraint firstItem="0lV-fK-LZb" firstAttribute="centerX" secondItem="utc-9Q-E8i" secondAttribute="centerX" id="Hs8-j2-ENl"/>
-                            <constraint firstItem="cyG-KN-xSz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="JyJ-Eu-Beu"/>
-                            <constraint firstItem="0lV-fK-LZb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QqG-ZG-eB2"/>
-                            <constraint firstItem="0lV-fK-LZb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="YIv-Y4-dIi"/>
-                            <constraint firstAttribute="trailing" secondItem="utc-9Q-E8i" secondAttribute="trailing" id="YoJ-Oi-W0e"/>
-                            <constraint firstItem="0lV-fK-LZb" firstAttribute="centerX" secondItem="NbK-Bh-YTb" secondAttribute="centerX" id="azw-fA-ByT"/>
-                            <constraint firstItem="utc-9Q-E8i" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="gmM-57-9L4"/>
-                            <constraint firstItem="cyG-KN-xSz" firstAttribute="top" secondItem="0lV-fK-LZb" secondAttribute="bottom" constant="12" id="gwf-mK-HrN"/>
-                            <constraint firstItem="NbK-Bh-YTb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="97" id="iw7-8h-OhW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cyG-KN-xSz" secondAttribute="trailing" constant="19" id="uCY-kg-iv5"/>
+                            <constraint firstItem="fnz-ga-uRe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="0el-lh-dcy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fnz-ga-uRe" secondAttribute="trailing" constant="16" id="5Jp-aR-dST"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fnz-ga-uRe" secondAttribute="bottom" constant="100" id="I5r-Eh-il5"/>
+                            <constraint firstItem="fnz-ga-uRe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="baA-v3-SG2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="memImageView" destination="sfJ-pW-DAK" id="Jll-a6-x9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Background" width="320" height="568"/>
-        <image name="Bitmap" width="277" height="281"/>
-        <image name="Buttons" width="282" height="54"/>
-        <image name="Swipe Card" width="304" height="432"/>
-    </resources>
 </document>

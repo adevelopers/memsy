@@ -10,12 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var memImageView: UIImageView!
+    
     @IBAction func refreshButtonAction(_ sender: Any) {
         print("КАртинка обновилась")
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        memImageView.image = #imageLiteral(resourceName: "mem2")
+        memImageView.contentMode = .scaleAspectFit
     }
 
 }
