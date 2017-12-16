@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Core Graphics Rectangle
         
+        
         let viewGreen4 = UIView(frame: CGRect(x: 0, y: 0, width: 300, height: 650))
         viewGreen4.backgroundColor = #colorLiteral(red: 0.4666666687, green: 0.7647058964, blue: 0.2666666806, alpha: 1)
         viewGreen4.center = view.center
@@ -37,13 +38,5 @@ class ViewController: UIViewController {
         viewGreen.center = view.center
         viewGreen.alpha = 1
         self.view.addSubview(viewGreen)
-        
-        
-        
-        
-        
-        
-      
     }
-
 }
