@@ -21,18 +21,25 @@ class ViewController: UIViewController {
         
         memImageView.image = #imageLiteral(resourceName: "mem2")
         memImageView.contentMode = .scaleAspectFit
+//получаем максимальную координату по ширине и высоте
+        let mWidth = UIScreen.main.bounds.width
+        let mHeight = UIScreen.main.bounds.height
+//находим коэффициент на который надо умножить для нового разрешения
+        let coefX = mWidth / 320
+        let coefY = mHeight / 568
+        print(mWidth, mHeight)
+        print(coefX, coefY)
+// рисуем нашу кнопку согласно нового разрешения
+        let red = UIButton(frame: CGRect(x: 251*coefX, y: 508*coefY, width: 50*coefX, height: 50*coefY))
         
-        let Mwidth = UIScreen.main.bounds.width
-        let Mheight = UIScreen.main.bounds.height
-        print(Mwidth, Mheight)
         
-        let red = UIButton(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
-        
-        
-        red.backgroundColor = .red
-        red.center = CGPoint(x: 251, y: 508)
+//        red.backgroundColor = .red
+        red.imageView?.image = #imageLiteral(resourceName: "nope")
+         red.contentMode = .scaleAspectFit
+//добавляем ее на наш View
         self.view.addSubview(red)
         
     }
 
 }
+

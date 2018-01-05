@@ -32,6 +32,11 @@
                                     <constraint firstItem="sfJ-pW-DAK" firstAttribute="top" secondItem="fnz-ga-uRe" secondAttribute="top" constant="5" id="kVQ-Sa-ptt"/>
                                 </constraints>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rqi-p7-WbL">
+                                <rect key="frame" x="251" y="508" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.12335961827164077" green="1" blue="0.237899761727286" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
