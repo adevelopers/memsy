@@ -22,22 +22,22 @@ class ViewController: UIViewController {
         memImageView.image = #imageLiteral(resourceName: "mem2")
         memImageView.contentMode = .scaleAspectFit
 //получаем максимальную координату по ширине и высоте
-        let mWidth = UIScreen.main.bounds.width
-        let mHeight = UIScreen.main.bounds.height
+        let mainWidth = UIScreen.main.bounds.width
+        let mainHeight = UIScreen.main.bounds.height
 //находим коэффициент на который надо умножить для нового разрешения
-        let coefX = mWidth / 320
-        let coefY = mHeight / 568
-        print(mWidth, mHeight)
+        let coefX = mainWidth / 320
+        let coefY = mainHeight / 568
+        print(mainWidth, mainHeight)
         print(coefX, coefY)
 // рисуем нашу кнопку согласно нового разрешения
-        let red = UIButton(frame: CGRect(x: 251*coefX, y: 508*coefY, width: 50*coefX, height: 50*coefY))
+        let nopeButton = UIButton(frame: CGRect(x: 320*coefX, y: 568*coefY, width: 60*coefX, height: 60*coefY))
+
+//        red.setImage(image, for: .normal)
+        nopeButton.setBackgroundImage(#imageLiteral(resourceName: "nope"), for: .normal)
+//        red.imageView?.contentMode = .scaleAspectFit
+        nopeButton.contentMode = .scaleAspectFit
         
-        
-//        red.backgroundColor = .red
-        red.imageView?.image = #imageLiteral(resourceName: "nope")
-         red.contentMode = .scaleAspectFit
-//добавляем ее на наш View
-        self.view.addSubview(red)
+        self.view.addSubview(nopeButton)
         
     }
 
