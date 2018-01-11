@@ -21,25 +21,40 @@ class ViewController: UIViewController {
         
         memImageView.image = #imageLiteral(resourceName: "mem2")
         memImageView.contentMode = .scaleAspectFit
+        
+        
 //получаем максимальную координату по ширине и высоте
         let mainWidth = UIScreen.main.bounds.width
         let mainHeight = UIScreen.main.bounds.height
 //находим коэффициент на который надо умножить для нового разрешения
-        let coefX = mainWidth / 320
-        let coefY = mainHeight / 568
-        print(mainWidth, mainHeight)
-        print(coefX, coefY)
-// рисуем нашу кнопку согласно нового разрешения
-        let nopeButton = UIButton(frame: CGRect(x: 320*coefX, y: 568*coefY, width: 60*coefX, height: 60*coefY))
-
+//для nope
+        let nopeCoefX = mainWidth / 320
+        let nopeCoefY = mainHeight / 568
+//для rewind
+        let rewindCoefX = mainWidth / 23
+        let rewindCoefY = mainHeight / 508
+//        print(mainWidth, mainHeight)
+//        print(nopeCoefX, nopeCoefY)
+        
+// рисуем нашу nope кнопку согласно нового разрешения
+        let nopeButton = UIButton(frame: CGRect(x: 320*nopeCoefX, y: 568*nopeCoefY, width: 50*nopeCoefX, height: 50*nopeCoefY))
+// рисуем нашу rewind кнопку согласно нового разрешения
+        let rewindButton = UIButton(frame: CGRect(x: 23*rewindCoefX, y: 508*rewindCoefY, width: 50*rewindCoefX, height: 50*rewindCoefY))
 //        red.setImage(image, for: .normal)
+//устанавливаем нашу картинку nope в качестве заднего фона кнопки nope
         nopeButton.setBackgroundImage(#imageLiteral(resourceName: "nope"), for: .normal)
+//устанавливаем нашу картинку rewind в качестве заднего фона кнопки rewind
+        rewindButton.setBackgroundImage(#imageLiteral(resourceName: "Rewind"), for: .normal)
+        print(rewindButton.backgroundImage)
 //        red.imageView?.contentMode = .scaleAspectFit
+//задаем свойство масштабировать на всю площадь кнопки
         nopeButton.contentMode = .scaleAspectFit
-        
+        rewindButton.contentMode = .scaleAspectFill
+//добавляем на наш view nopeButton
         self.view.addSubview(nopeButton)
-        
+ //добавляем на наш view rewindButton
+        self.view.addSubview(rewindButton)
+        print(nopeButton)
     }
-
 }
 

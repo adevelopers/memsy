@@ -13,7 +13,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Memsy" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" userLabel="viewBackground">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,7 +24,6 @@
                                         <rect key="frame" x="5" y="5" width="278" height="293"/>
                                     </imageView>
                                 </subviews>
-                                <color key="backgroundColor" red="0.10847693913418244" green="0.35246102913676902" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="sfJ-pW-DAK" secondAttribute="bottom" constant="70" id="924-vj-UA5"/>
                                     <constraint firstItem="sfJ-pW-DAK" firstAttribute="leading" secondItem="fnz-ga-uRe" secondAttribute="leading" constant="5" id="Xqd-tf-6sX"/>
@@ -32,12 +31,9 @@
                                     <constraint firstItem="sfJ-pW-DAK" firstAttribute="top" secondItem="fnz-ga-uRe" secondAttribute="top" constant="5" id="kVQ-Sa-ptt"/>
                                 </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="nope" translatesAutoresizingMaskIntoConstraints="NO" id="rqi-p7-WbL">
-                                <rect key="frame" x="251" y="508" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fnz-ga-uRe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="0el-lh-dcy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fnz-ga-uRe" secondAttribute="trailing" constant="16" id="5Jp-aR-dST"/>
@@ -55,7 +51,4 @@
             <point key="canvasLocation" x="135" y="133.09859154929578"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="nope" width="32" height="32"/>
-    </resources>
 </document>
