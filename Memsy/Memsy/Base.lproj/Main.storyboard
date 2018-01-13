@@ -43,6 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="memContainer" destination="fnz-ga-uRe" id="HOC-1n-xbJ"/>
                         <outlet property="memImageView" destination="sfJ-pW-DAK" id="Jll-a6-x9s"/>
                     </connections>
                 </viewController>
