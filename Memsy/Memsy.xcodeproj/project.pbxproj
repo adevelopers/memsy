@@ -13,6 +13,8 @@
 		715434B21FCECB1A001B9D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 715434B11FCECB1A001B9D15 /* Assets.xcassets */; };
 		715434B51FCECB1A001B9D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 715434B31FCECB1A001B9D15 /* LaunchScreen.storyboard */; };
 		715434C01FCECB1A001B9D15 /* MemsyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715434BF1FCECB1A001B9D15 /* MemsyTests.swift */; };
+		AECD98068FE569E90C1B4DCE /* Pods_Memsy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B1EB78818468DC667995C8AB /* Pods_Memsy.framework */; };
+		BD39BBEDB3C475D51AFCA24B /* Pods_MemsyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 353968EF7C07082D9FD4EE76 /* Pods_MemsyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		353968EF7C07082D9FD4EE76 /* Pods_MemsyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MemsyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		620DF72600F86D0356FD254F /* Pods-Memsy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memsy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Memsy/Pods-Memsy.release.xcconfig"; sourceTree = "<group>"; };
 		715434A71FCECB1A001B9D15 /* Memsy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Memsy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		715434AA1FCECB1A001B9D15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		715434AC1FCECB1A001B9D15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +40,10 @@
 		715434BB1FCECB1A001B9D15 /* MemsyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MemsyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		715434BF1FCECB1A001B9D15 /* MemsyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemsyTests.swift; sourceTree = "<group>"; };
 		715434C11FCECB1A001B9D15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80A3937C4A3DD6D1419351B1 /* Pods-MemsyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemsyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MemsyTests/Pods-MemsyTests.release.xcconfig"; sourceTree = "<group>"; };
+		9A6130CF4A025459444B7166 /* Pods-MemsyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MemsyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MemsyTests/Pods-MemsyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A3DA876B03FF534718652F7B /* Pods-Memsy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Memsy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Memsy/Pods-Memsy.debug.xcconfig"; sourceTree = "<group>"; };
+		B1EB78818468DC667995C8AB /* Pods_Memsy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Memsy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AECD98068FE569E90C1B4DCE /* Pods_Memsy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD39BBEDB3C475D51AFCA24B /* Pods_MemsyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +72,8 @@
 				715434A91FCECB1A001B9D15 /* Memsy */,
 				715434BE1FCECB1A001B9D15 /* MemsyTests */,
 				715434A81FCECB1A001B9D15 /* Products */,
+				A18B3F5D67EF6F8DA3561057 /* Pods */,
+				F2FC0AC5CAAFC9C34D8E58F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +108,26 @@
 			path = MemsyTests;
 			sourceTree = "<group>";
 		};
+		A18B3F5D67EF6F8DA3561057 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3DA876B03FF534718652F7B /* Pods-Memsy.debug.xcconfig */,
+				620DF72600F86D0356FD254F /* Pods-Memsy.release.xcconfig */,
+				9A6130CF4A025459444B7166 /* Pods-MemsyTests.debug.xcconfig */,
+				80A3937C4A3DD6D1419351B1 /* Pods-MemsyTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F2FC0AC5CAAFC9C34D8E58F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B1EB78818468DC667995C8AB /* Pods_Memsy.framework */,
+				353968EF7C07082D9FD4EE76 /* Pods_MemsyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 715434C41FCECB1A001B9D15 /* Build configuration list for PBXNativeTarget "Memsy" */;
 			buildPhases = (
+				529669CED1884B6C915D9248 /* [CP] Check Pods Manifest.lock */,
 				715434A31FCECB1A001B9D15 /* Sources */,
 				715434A41FCECB1A001B9D15 /* Frameworks */,
 				715434A51FCECB1A001B9D15 /* Resources */,
+				F57249F2DAC5CFF44F510988 /* [CP] Embed Pods Frameworks */,
+				973219017498380496C32311 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +155,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 715434C71FCECB1A001B9D15 /* Build configuration list for PBXNativeTarget "MemsyTests" */;
 			buildPhases = (
+				D15813CE97D4C6CAE5F10957 /* [CP] Check Pods Manifest.lock */,
 				715434B71FCECB1A001B9D15 /* Sources */,
 				715434B81FCECB1A001B9D15 /* Frameworks */,
 				715434B91FCECB1A001B9D15 /* Resources */,
+				FD1A5C06BCA9B1069A5D979C /* [CP] Embed Pods Frameworks */,
+				F828AAFC453139C13010F60F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +231,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		529669CED1884B6C915D9248 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Memsy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		973219017498380496C32311 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memsy/Pods-Memsy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D15813CE97D4C6CAE5F10957 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MemsyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57249F2DAC5CFF44F510988 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Memsy/Pods-Memsy-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Memsy/Pods-Memsy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F828AAFC453139C13010F60F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemsyTests/Pods-MemsyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD1A5C06BCA9B1069A5D979C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MemsyTests/Pods-MemsyTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		715434A31FCECB1A001B9D15 /* Sources */ = {
@@ -351,6 +491,7 @@
 		};
 		715434C51FCECB1A001B9D15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3DA876B03FF534718652F7B /* Pods-Memsy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -366,6 +507,7 @@
 		};
 		715434C61FCECB1A001B9D15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620DF72600F86D0356FD254F /* Pods-Memsy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +523,7 @@
 		};
 		715434C81FCECB1A001B9D15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A6130CF4A025459444B7166 /* Pods-MemsyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -397,6 +540,7 @@
 		};
 		715434C91FCECB1A001B9D15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A3937C4A3DD6D1419351B1 /* Pods-MemsyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
